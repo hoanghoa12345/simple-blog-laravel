@@ -85,7 +85,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="https://raw.githubusercontent.com/hoanghoa12345/simple-blog-laravel/main/sample/sample_1" alt="Product Image 1" width="300"><img src="https://raw.githubusercontent.com/hoanghoa12345/simple-blog-laravel/main/sample/sample_2" alt="Product Image 1" width="300"><img src="https://raw.githubusercontent.com/hoanghoa12345/simple-blog-laravel/main/sample/sample_1" alt="Product Image 3" width="300">
+<img src="https://raw.githubusercontent.com/hoanghoa12345/simple-blog-laravel/main/sample/sample_1.png" alt="Product Image 1">
+<img src="https://raw.githubusercontent.com/hoanghoa12345/simple-blog-laravel/main/sample/sample_2.png" alt="Product Image 2">
+<img src="https://raw.githubusercontent.com/hoanghoa12345/simple-blog-laravel/main/sample/sample_1.png" alt="Product Image 3">
 Here's a blank template to get started:
 **To avoid retyping too much info. Do a search and replace with your text editor for the following:**
 `hoanghoa12345`, `simple-blog-laravel`, `hoa_kn`, `email`, `Simple Blog Laravel`, `Simple Blog Laravel`
