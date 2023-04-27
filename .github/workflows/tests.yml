@@ -1,0 +1,45 @@
+name: Tests
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+     branches:
+      - main
+
+jobs:
+  tests:
+    name: Run tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Cache composer dependencies
+        uses: actions/cache@v2
+        with:
+          path: vendor
+          key: composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: |
+            composer-
+      
+      - name: Install PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-sersion: 8.1
+          
+      - name: Copy .env file
+        run: |
+          cp .env.example .env
+         
+      - name: Run composer
+        run: |
+          composer install --no-interaction
+          
+      - name: Generate key
+        run: |
+          php artisan key:generate
+          
+      - name: Run test suite
+        run: |
+          php artisan test
